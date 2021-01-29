@@ -1,4 +1,10 @@
-print("Hello World")
-print("Hey gal!")
-print("How you are you doing?")
-print ("this will cause a conflict")
+#!/usr/bin/python
+# Example Python script
+import sys
+argc = len(sys.argv)
+if argc > 1:
+    print('Too many args')
+else:
+    where = 'World'
+    print("Hello", where)
+print('Goodbye from ' + sys.argv[0])
